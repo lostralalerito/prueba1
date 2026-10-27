@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz cumpleaños Isabel</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div>
+<canvas id="confeti"></canvas>
+<div class="fiesta izq">🎉</div><div class="fiesta der">🎉</div>
+
+<main class="stage" id="stage">
+  <svg id="frame" aria-hidden="true"><path id="framePath"></path></svg>
+
+  <div class="content">
+    <div class="titulos">
+      <h1>FELIZ CUMPLEAÑOS<span>ISABEL</span></h1>
+    </div>
+
+    <div class="grupo">
+      <h2>¿QUE SORPRESA QUIERES VER PRIMERO?</h2>
+
+    <div class="botones" id="botones"></div>
+
+    <div class="fila-ninguna">
+      <button class="btn ninguna" id="ninguna" type="button"></button>
+    </div>
+    </div>
+  </div>
+</main>
+
+<div class="musica" id="musica">
+  <button id="mPlay" type="button" aria-label="Reproducir o pausar música"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
+  <button id="mNext" type="button" aria-label="Siguiente canción"><svg viewBox="0 0 24 24"><path d="M6 6l8.5 6L6 18zM16 6h2.5v12H16z"/></svg></button>
+  <div class="vol" id="vol">
+    <button id="mVol" type="button" aria-label="Volumen"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg></button>
+    <input type="range" id="mVolRango" min="0" max="100" step="1" aria-label="Volumen">
+    <input type="text" id="mVolNum" inputmode="numeric" pattern="[0-9]*" maxlength="3" autocomplete="off" aria-label="Nivel de volumen, de 0 a 100" value="50">
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

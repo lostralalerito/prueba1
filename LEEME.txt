@@ -1,0 +1,17 @@
+CUMPLEAÑOS DE ISABEL
+====================
+Abre index.html en tu navegador.
+
+Archivos
+- index.html : estructura de la página
+- style.css  : colores y espacios (--gap, --morado, --rojo, --zona-musica...)
+- script.js  : configuración (imagen de fondo, borde, botones, frases, música)
+
+Dónde editar (todo en script.js, arriba, zona ZONA EDITABLE)
+- Imagen de fondo : IMAGEN_FONDO = 'imagenes/fondo.jpg'
+- Canciones       : MUSICA.lista = ['musica/cancion1.mp3', ...]
+- Volumen inicial : MUSICA.volumen (0 a 100)
+- Desvanecimiento : MUSICA.fade (milisegundos entre canciones)
+- Borde ondulado  : objeto BORDE
+- Botones 1,2,3   : BOTONES (campo url)
+- Frases y emojis : FRASES (izq / der = ruta del PNG)
